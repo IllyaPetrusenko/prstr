@@ -1,0 +1,6 @@
+.idea/
+venv/
+wsgi.py
+__pycache__/
+proshtorenv/
+.wsgi.py.swp
