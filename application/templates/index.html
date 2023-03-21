@@ -2,82 +2,118 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.png') }}">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
   <title>Proshtor</title>
 </head>
 <body>
-  <header class="navbar">
+  <main class="main-content">
+    <header class="navbar">
     <div class="logo">
       <a href="/"><img src="{{ url_for('static', filename='images/111.png') }}" alt="Logo"></a>
     </div>
-    <nav>
-      <button class="button is-dark" id="about-us">Про нас</button>
-      <button class="button is-dark" id="career">Карʼєра</button>
-      <button class="button is-dark" id="contact-button">Зв'язатися з нами</button>
-    </nav>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">Про нас</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Карʼєра</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#exampleModal">Звʼязатись з нами</a>
+      </li>
+    </ul>
   </header>
-  <main class="main-content">
     <div class="background-image">
-      <div class="overlay">
-        <div>
-          <p style="text-color: white;">Натисніть кнопку, щоб зв'язатися з нашою командою</p>
-          <button class="button is-dark" id="contact-button-2">Зв'язатися з нами</button>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" style="background-image: url('/static/images/42.jpg');">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Жалюзі</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img src="{{ url_for('static', filename='images/111.png') }}" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                      <small>Earth</small>
+                    </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>3d</small>
+              </li>
+            </ul>
+          </div>
         </div>
-
+          </div>
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" style="background-image: url('/static/images/42.jpg');">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Штори</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>Pakistan</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>4d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/static/images/42.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Ролети</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>California</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>5d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        </div>
+    <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
       </div>
 </div>
   </main>
-  <div id="contact-overlay" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5);">
-    <div class="contact-form" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px;">
-      <form onsubmit="return validateForm()">
-        <div class="notification is-danger is-light" id="divContent">
-          Введіть корректний номер телефону
-        </div>
-        <label for="name">Ім'я:</label>
-        <input class="input" type="text" id="name" name="name"><br><br>
-        <label for="phone">Номер телефону:</label>
-        <input class="input" type="text" id="phone" name="phone"><br><br>
-        <label for="comment">Коментар:</label><br>
-        <textarea class="textarea" placeholder="Введіть коментар" id="comment" name="comment"></textarea><br><br>
-        <input class="button is-dark submit-on-form" type="submit" value="Надіслати">
-      </form>
-      <button class="delete is-medium" id="close-button" style="position: absolute; top: 5px; right: 5px;">Закрити</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
   </div>
-  <script>
-    document.getElementById('divContent').style.display = 'none';
-    const contactButton = document.getElementById('contact-button');
-    const contactButton2 = document.getElementById('contact-button-2');
-    const contactOverlay = document.getElementById('contact-overlay');
-    const contactForm = document.getElementById('contact-form');
-    const closeButton = document.getElementById('close-button');
-
-    contactButton.addEventListener('click', () => {
-      contactOverlay.style.display = 'block';
-    });
-
-    contactButton2.addEventListener('click', () => {
-      contactOverlay.style.display = 'block';
-    });
-
-    closeButton.addEventListener('click', () => {
-      contactOverlay.style.display = 'none';
-    });
-
-    function validateForm() {
-    const phoneInput = document.getElementById('phone');
-    const phonePattern = /^\+?3?8?(0\d{9})$/; // допускається формат +380XXXXXXXXX або 0XXXXXXXXX
-
-    if (!phonePattern.test(phoneInput.value)) {
-      document.getElementById('divContent').style.display = 'block';
-      return false;
-    }
-
-    // Якщо номер телефону валідний, форму можна відправляти
-    return true;
-  }
-  </script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

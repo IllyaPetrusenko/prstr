@@ -9,5 +9,13 @@ def home():
     return render_template('test.html')
 
 
+@app.route('/test-test-test')
+def test():
+    return render_template('index.html')
+
+
 if __name__ == "__main__":
+    # test
+    # app.run(host="127.0.0.1")
+    # prod
     app.run(host="0.0.0.0")
