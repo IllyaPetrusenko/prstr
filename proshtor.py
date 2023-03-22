@@ -11,7 +11,7 @@ def home():
 
 @app.route('/test-test-test')
 def test():
-    return render_template('index.html')
+    return render_template('new_index.html')
 
 
 if __name__ == "__main__":

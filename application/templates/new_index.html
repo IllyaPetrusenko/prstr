@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+  <title>PRO.SHTOR</title>
+  <!-- подключение CSS-файлов Materialize -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- подключение стилей для этого шаблона -->
+  <style>
+    body {
+      background-color: #f5f5f5;
+    }
+    .header {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+    .card {
+      background-color: #333333;
+      background-image: "../static/images/42.png";
+      padding: 60px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      color: white;
+    }
+    .logo {
+      max-width: 100%;
+      height: auto;
+    }
+    @media screen and (max-width: 768px) {
+      .logo {
+        max-width: 40%;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 576px) {
+      .logo {
+        max-width: 60%;
+        text-align: center;
+      }
+    }
+    .container.main-page-cards {
+      padding: 15%;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+      <img class="logo" src="{{ url_for('static', filename='images/111.png') }}" alt="Logo">
+  </header>
+      <div class="container main-page-cards">
+        <div class="row flex-wrap">
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-body" id="galuzi">
+                <h5 class="card-title">Жалюзі</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-body" id="curtains">
+                <h5 class="card-title">Штори</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-body" id="rolets">
+                <h5 class="card-title">Ролети</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

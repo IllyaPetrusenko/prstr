@@ -131,3 +131,8 @@
     .nav-link:hover {
       color: #cb0002;
     }
+
+    .card {
+      margin-left: 0.5%;
+      margin-right: 0.5%;
+    }
