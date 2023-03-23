@@ -2595,7 +2595,8 @@ textarea {
 }
 
 ul:not(.browser-default) {
-  padding-left: 0;
+  padding-left: 5px;
+  padding-top: 30px;
   list-style-type: none;
 }
 
@@ -4331,7 +4332,7 @@ nav .brand-logo {
   color: #fff;
   display: inline-block;
   font-size: 2.1rem;
-  padding: 0;
+  padding: 8px 1px;
 }
 
 nav .brand-logo.center {
@@ -4399,7 +4400,7 @@ nav ul a {
   font-size: 1rem;
   color: #fff;
   display: block;
-  padding: 0 15px;
+  padding: 8px 15px;
   cursor: pointer;
 }
 
