@@ -4402,6 +4402,7 @@ nav ul a {
   display: block;
   padding: 0px 15px;
   cursor: pointer;
+  font-size: 18px;
 }
 
 nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
