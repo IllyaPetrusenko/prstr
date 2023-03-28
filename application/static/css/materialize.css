@@ -2596,7 +2596,7 @@ textarea {
 
 ul:not(.browser-default) {
   padding-left: 5px;
-  padding-top: 30px;
+  padding-top: 8px;
   list-style-type: none;
 }
 
@@ -3430,7 +3430,7 @@ table span.badge {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 90%;
+  width: 85%;
 }
 
 @media only screen and (min-width: 601px) {
@@ -3441,7 +3441,7 @@ table span.badge {
 
 @media only screen and (min-width: 993px) {
   .container {
-    width: 70%;
+    width: 85%;
   }
 }
 
@@ -4400,7 +4400,7 @@ nav ul a {
   font-size: 1rem;
   color: #fff;
   display: block;
-  padding: 8px 15px;
+  padding: 0px 15px;
   cursor: pointer;
 }
 
@@ -8354,14 +8354,17 @@ input[type=range]::-ms-thumb {
 .carousel {
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 50%;
   height: 400px;
   -webkit-perspective: 500px;
           perspective: 500px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform-origin: 0% 50%;
-          transform-origin: 0% 50%;
+
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 1%;
 }
 
 .carousel.carousel-slider {
@@ -8402,8 +8405,8 @@ input[type=range]::-ms-thumb {
 
 .carousel .carousel-item {
   visibility: hidden;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   position: absolute;
   top: 0;
   left: 0;

@@ -57,6 +57,19 @@
     </nav>
     <!--  Nav bar END-->
 
+    <!-- Carousel START -->
+    <div class="carousel">
+      <a class="carousel-item" href="#one!">
+        <img src="../static/images/111.png">
+        <h1 class="carousel-h1">Штори</h1>
+      </a>
+      <a class="carousel-item" href="#two!"><img src="../static/images/111.png"></a>
+      <a class="carousel-item" href="#three!"><img src="../static/images/42.jpg"></a>
+      <a class="carousel-item" href="#four!"><img src="../static/images/222.png"></a>
+      <a class="carousel-item" href="#five!"><img src="../static/images/111.png"></a>
+    </div>
+    <!-- Carousel END -->
+
     <div class="section no-pad-bot" id="index-banner">
       <div class="container">
         <br><br>
@@ -141,8 +154,16 @@
     </footer>
     <!--  Footer END-->
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='js/materialize.js') }}"></script>
     <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        $(document).ready(function(){
+          $('.carousel').carousel();
+        });
+    </script>
   </body>
 </html>
