@@ -2,9 +2,12 @@ body {
     max-width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 2%;
+    margin-top: -2%;
 }
 
+main {
+    margin-top: 4%;
+}
 
 .subnav-hero-section {
   text-align: center;
