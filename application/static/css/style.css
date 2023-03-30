@@ -85,8 +85,8 @@ main {
 }
 
 .button.alert:hover, .button.alert:focus {
-  background-color: #fff;
-  color: #cc0000c4;
+  background-color: #bd3f3f;
+  color: #fff;
 }
 
 @media screen and (min-width: 40em) {
@@ -133,21 +133,5 @@ main {
       -webkit-align-items: flex-start;
       -ms-flex-align: start;
       align-items: center;
-    }
-    .reveal {
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 70%;
-      max-width: none;
-      height: 50%;
-      min-height: 100%;
-      margin-left: 15%;
-      border: 0;
-      border-radius: 0;
-      margin-right: 15%;
-      margin-top: 25%;
-      margin-bottom: 25%;
     }
 }

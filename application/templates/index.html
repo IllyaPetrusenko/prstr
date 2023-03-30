@@ -44,16 +44,16 @@
         </a>
       </h1>
       <ul class="subnav-hero-subnav">
-        <li><a href="#">
+        <li><a href="https://www.facebook.com/proshtor">
           <img title="Facebook" src="../static/images/facebook.png" alt="Facebook">
         </a></li>
-        <li><a href="#">
+        <li><a href="https://www.instagram.com/proshtor/">
           <img title="Instagram" src="../static/images/instagram.png" alt="Instagram">
         </a></li>
-        <li><a href="#">
+        <li><a href="/" disabled>
           <img title="Telegram" src="../static/images/telegram.png" alt="Telegram">
         </a></li>
-        <li><a target="_blank" href="#">
+        <li><a href="https://www.tiktok.com/@pro.shtor">
           <img title="TikTok" src="../static/images/tiktok.png" alt="TikTok">
         </a></li>
       </ul>
@@ -97,9 +97,23 @@
     <!-- Модальное окно обратной связи -->
     <!-- This is the first modal -->
     <div class="reveal" id="exampleModal2" data-reveal>
-      <h1>Awesome!</h1>
-      <p class="lead">I have another modal inside of me!</p>
-      <button class="button" data-open="exampleModal3">Click me for another modal!</button>
+      <form>
+        <div class="grid-container">
+          <div class="grid-y grid-padding-y">
+            <div class="medium-6 cell">
+              <label>Імʼя:
+                <input type="text" placeholder="Введіть імʼя">
+              </label>
+            </div>
+            <div class="medium-6 cell">
+              <label>Телефон:
+                <input type="text" placeholder="Введіть телефон">
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+      <button id="submit-callback" class="alert button" data-open="exampleModal3">Відправити</button>
       <button class="close-button" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
       </button>
