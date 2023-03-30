@@ -6,9 +6,9 @@
 }
 
 body {
-    max-width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: -2%;
 }
 
@@ -52,7 +52,7 @@ main {
   text-align: center;
   margin: 0 auto;
   bottom: 0;
-  width: 125%;
+  width: 100%;
 }
 
 .subnav-hero-subnav li {
