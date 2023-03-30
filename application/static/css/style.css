@@ -1,8 +1,23 @@
+@font-face {
+    font-family: 'Nautilus';
+    src: url('../fonts/Days Sans Black.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     max-width: 80%;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: -2%;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Nautilus";
+  font-style: normal;
+  font-weight: normal;
+  color: inherit;
+  text-rendering: optimizeLegibility;
 }
 
 main {
@@ -64,3 +79,34 @@ main {
   background: rgba(254, 254, 254, 0.15);
 }
 
+.button.alert, .button.alert.disabled, .button.alert[disabled], .button.alert.disabled:hover, .button.alert[disabled]:hover, .button.alert.disabled:focus, .button.alert[disabled]:focus {
+  background-color: #c00;
+  color: #fff;
+}
+
+.button.alert:hover, .button.alert:focus {
+  background-color: #fff;
+  color: #cc0000c4;
+}
+
+@media screen and (min-width: 40em) {
+    .marketing-site-content-section .marketing-site-content-section-block {
+      -webkit-flex: 1 0 50%;
+      -ms-flex: 1 0 50%;
+      flex: 1 0 50%;
+      padding: 6%;
+    }
+}
+
+@media screen and (max-width: 810px){
+    body {
+        font-size: 15px;
+    }
+    .marketing-site-content-section-block-header {
+        font-size: 25px;
+    }
+}
+
+.modal-content {
+    display: none;
+}
