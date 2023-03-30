@@ -73,7 +73,7 @@
           <li>Штори від 275 грн/м.п., тюль від 174 грн/м.п.</li>
           <li>Термін виготовлення 3 дні!</li>
         </ul>
-        <button type="button" class="alert button">Замовити безкоштовний замір</button>
+        <button data-open="exampleModal2" class="alert button">Замовити безкоштовний замір</button>
       </div>
       <div class="marketing-site-content-section-block small-order-2 medium-order-1">
         <h3 class="marketing-site-content-section-block-header">Жалюзі</h3>
@@ -81,9 +81,11 @@
           <li>16 видів систем</li>
           <li>Понад 2000 варіантів матеріалу</li>
           <li>від 210 грн/шт</li>
-          <li>Варіанти кріплення на стулку вікна, у отвір та на отвір, на стіну та на стелю</li>
+          <li>Варіанти кріплення на стулку вікна, у отвір
+            <br>та на отвір, на стіну та на стелю</li>
           <li>Термін виготовлення 3 дні!</li>
-        </ul>        <button type="button" class="alert button">Замовити безкоштовний замір</button>
+        </ul>
+        <button data-open="exampleModal2" class="alert button">Замовити безкоштовний замір</button>
       </div>
       <div class="marketing-site-content-section-img small-order-1 medium-order-2">
         <img src="../static/images/63.jpg" alt="" />
@@ -93,20 +95,22 @@
 
     </main>
     <!-- Модальное окно обратной связи -->
-    <div class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Обратная связь</h2>
-        <form>
-          <label for="name">Імʼя:</label>
-          <input type="text" id="name" name="name" required minlength="4">
-          <label for="phone">Телефон:</label>
-          <input type="phone" id="phone" name="phone" required>
-          <label for="message">Коментар:</label>
-          <textarea id="message" name="message"></textarea>
-          <button type="submit">Отправить</button>
-        </form>
-      </div>
+    <!-- This is the first modal -->
+    <div class="reveal" id="exampleModal2" data-reveal>
+      <h1>Awesome!</h1>
+      <p class="lead">I have another modal inside of me!</p>
+      <button class="button" data-open="exampleModal3">Click me for another modal!</button>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <!-- This is the nested modal -->
+    <div class="reveal" id="exampleModal3" data-reveal>
+      <h2>ANOTHER MODAL!!!</h2>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
     <div> Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
     <!-- Подключение JavaScript-файла для обработки событий на странице -->
