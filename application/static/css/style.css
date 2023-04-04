@@ -1,3 +1,7 @@
+html{
+    background: #333333;
+}
+
 @font-face {
     font-family: 'Nautilus';
     src: url('../fonts/Days Sans Black.otf');
@@ -5,7 +9,25 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'DaysSansBlack';
+    src: url('../fonts/Days Sans Black.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul {
+    font-family: 'DaysSansBlack';
+    font-size: 15px;
+}
+
+.button {
+    font-family: 'DaysSansBlack';
+}
+
 body {
+    background-color: #333333;
+    color: #fff;
     max-width: 90%;
     margin-left: 5%;
     margin-right: 5%;
