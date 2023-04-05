@@ -28,10 +28,9 @@ ul {
 body {
     background-color: #333333;
     color: #fff;
-    max-width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: -2%;
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     font-size: 25px;
 }
 
@@ -47,114 +46,53 @@ main {
     margin-top: 4%;
 }
 
-.subnav-hero-section {
-  text-align: center;
+.uk-navbar-container:not(.uk-navbar-transparent) {
   background: #333333;
-  background-size: cover;
-  position: relative;
-  overflow: visible;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+}
+
+.uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 200px;
+  justify-content: center;
+  align-items: center;
+  column-gap: .25em;
+  box-sizing: border-box;
+  min-height: 0px;
+  font-size: .875rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  text-decoration: none;
 }
 
-.subnav-hero-section .subnav-hero-headline {
-  color: #fefefe;
+.s-item {
+  margin: 10px;
 }
 
-.subnav-hero-subnav {
-  float: none;
-  position: absolute;
-  text-align: center;
-  margin: 0 auto;
-  bottom: 0;
-  width: 100%;
-}
-
-.subnav-hero-subnav li {
-  float: none;
-  display: inline-block;
-}
-
-.subnav-hero-subnav li a {
-  padding: 0.9rem 1rem;
-  font-size: 0.75rem;
-  color: #fff;
-  text-transform: uppercase;
+.uk-progress {
+  vertical-align: baseline;
   display: block;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: all 0.35s ease-in-out;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 0;
+  background-color: #333333;
+  margin-bottom: 20px;
+  height: 15px;
+  border-radius: 0px;
+  overflow: hidden;
 }
 
-.subnav-hero-subnav li a.is-active {
-  background: rgba(254, 254, 254, 0.15);
+@media (min-width: 960px) {
+  .uk-section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
-.subnav-hero-subnav li a:hover {
-  background: rgba(254, 254, 254, 0.15);
+.uk-section {
+  background: #333333;
 }
 
-.button.alert, .button.alert.disabled, .button.alert[disabled], .button.alert.disabled:hover, .button.alert[disabled]:hover, .button.alert.disabled:focus, .button.alert[disabled]:focus {
-  background-color: #c00;
-  color: #fff;
-}
-
-.button.alert:hover, .button.alert:focus {
-  background-color: #bd3f3f;
-  color: #fff;
-}
-
-@media screen and (min-width: 40em) {
-    .marketing-site-content-section .marketing-site-content-section-block {
-      -webkit-flex: 1 0 50%;
-      -ms-flex: 1 0 50%;
-      flex: 1 0 50%;
-      padding: 6%;
-    }
-}
-
-@media screen and (max-width: 810px){
-    body {
-        font-size: 15px;
-    }
-    .marketing-site-content-section-block-header {
-        font-size: 40px;
-    }
-}
-
-.modal-content {
-    display: none;
-}
-
-@media screen and (max-width: 639px) {
-    .marketing-site-content-section .marketing-site-content-section-block {
-      padding: 1rem;
-      -webkit-flex: 1 0 100%;
-      -ms-flex: 1 0 100%;
-      flex: 1 0 100%;
-      -webkit-align-self: stretch;
-      -ms-flex-item-align: stretch;
-      align-self: stretch;
-      background: #333333;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: revert-layer;
-      -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-      align-items: center;
-    }
+@media (max-width: 491px) {
+  .uk-button {
+    font-size: 8px;
+  }
 }
