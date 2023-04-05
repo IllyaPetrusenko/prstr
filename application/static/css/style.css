@@ -96,3 +96,19 @@ main {
     font-size: 8px;
   }
 }
+
+.uk-button-accept {
+  background-color: #059b00;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.uk-button-danger {
+  background-color: #cb0002;
+  color: #fff;
+}
+
+.uk-button-danger:hover {
+  background-color: #cb0002b8;
+  color: #fff;
+}
