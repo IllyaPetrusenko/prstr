@@ -40,36 +40,37 @@
     <a class="uk-navbar-item uk-logo" href="/">
       <img src="../static/images/111.png" alt="Logo" style="max-width: 60%;">
     </a>
-    <div class="uk-navbar-item uk-logo">
-      <a href="https://www.facebook.com/proshtor">
-        <img class="s-item" title="Facebook" src="../static/images/facebook.png" alt="Facebook">
-      </a>
-      <a href="https://www.instagram.com/proshtor/">
-        <img class="s-item" title="Instagram" src="../static/images/instagram.png" alt="Instagram">
-      </a>
-      <a href="/">
-        <img class="s-item" title="Telegram" src="../static/images/telegram.png" alt="Telegram">
-      </a>
-      <a href="https://www.tiktok.com/@pro.shtor">
-        <img class="s-item" title="TikTok" src="../static/images/tiktok.png" alt="TikTok">
-      </a>
+    <div class="uk-navbar-item uk-logo" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-iconnav; delay: 300; repeat: true">
+      <ul class="uk-iconnav">
+        <li>
+          <a href="https://www.facebook.com/proshtor"><img class="s-item" title="Facebook" src="../static/images/facebook.png" alt="Facebook"></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/proshtor/"><img class="s-item" title="Instagram" src="../static/images/instagram.png" alt="Instagram"></a>
+        </li>
+        <li>
+          <a href="/"><img class="s-item" title="Telegram" src="../static/images/telegram.png" alt="Telegram"></a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@pro.shtor"><img class="s-item" title="TikTok" src="../static/images/tiktok.png" alt="TikTok"></a>
+        </li>
+      </ul>
     </div>
   </nav>
   <main>
     <div class="uk-section uk-section-default">
       <div class="uk-container uk-flex uk-height-small uk-margin uk-text-center">
-        <button class="uk-margin-auto uk-margin-auto-vertical uk-button uk-button-danger" type="button" uk-toggle="target: #modal-example">
+        <!--<button class="uk-margin-auto uk-margin-auto-vertical uk-button uk-button-danger" type="button" uk-toggle="target: #modal-example">
           Замовити безкоштовний замір
-        </button>
+        </button>-->
       </div>
     </div>
     <div class="uk-section uk-section-default">
       <div class="uk-container">
         <div class="uk-text-center">
-        <p>Сайт тимчасово не доступний. Ви можете знайти нас у
-          <a href="https://instagram.com/proshtor?igshid=YmMyMTA2M2Y=">Інстаграм</a></p>
-        <p>Дуже скоро ми повернемось та зробимо цей світ краще</p>
-        <p>Слава Україні!</p>
+          <p>Зараз наша команда займається переробкою сторінки.</p>
+          <p>Дуже скоро ми повернемось та зробимо цей світ краще</p>
+          <p>Слава Україні!</p>
     </div>
       </div>
     </div>
@@ -78,7 +79,7 @@
       <div class="uk-modal-dialog uk-modal-body">
         <form>
           <fieldset class="uk-fieldset">
-            <legend class="uk-legend">Заповніть поля і ми скоро Вам передзвонимо</legend>
+            <legend class="uk-legend uk-text-center">Замовлення безкоштовного заміру</legend>
             <div class="uk-margin">
                 <input class="uk-input" type="text" placeholder="Імʼя" aria-label="Input">
             </div>
@@ -91,7 +92,7 @@
         </fieldset>
         </form>
         <p class="uk-text-right">
-          <button class="uk-button uk-button-accept" type="button">Відправити</button>
+          <button class="uk-button uk-button-accept uk-text-center" type="button">Відправити</button>
         </p>
       </div>
     </div>
