@@ -112,3 +112,11 @@ main {
   background-color: #cb0002b8;
   color: #fff;
 }
+
+.uk-modal-body {
+  background: #333333;
+}
+
+.uk-fieldset {
+  font-size: 15px;
+}
