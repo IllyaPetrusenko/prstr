@@ -13,7 +13,7 @@ form.addEventListener('submit', function(e) {
   const formData = new FormData(form);
   const data = {"name": nameContact, "phone": phoneNumber, "comment": text};
   const json = JSON.stringify(data);
-  console.log(json);
+  const modal = document.querySelector('#callback-form');
 
   // Send the data to the endpoint using Fetch API
   fetch('/callback', {
@@ -23,16 +23,11 @@ form.addEventListener('submit', function(e) {
     },
     body: json
   })
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
   .then(data => {
     modal.style.display = 'none';
+  })
+  .then(data => {
     alert('Дякуємо за звернення, скоро ми Вам передзвонимо!');
-    // Do something with the response data
   })
   .catch(error => {
     console.error('Error:', error);
