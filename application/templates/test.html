@@ -42,35 +42,35 @@
     </a>
     <div class="uk-navbar-item uk-logo" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-iconnav; delay: 300; repeat: true">
       <ul class="uk-iconnav">
-        <li>
+        <li class="uk-iconnav">
           <a href="https://www.facebook.com/proshtor"><img class="s-item" title="Facebook" src="../static/images/facebook.png" alt="Facebook"></a>
         </li>
-        <li>
+        <li class="uk-iconnav">
           <a href="https://www.instagram.com/proshtor/"><img class="s-item" title="Instagram" src="../static/images/instagram.png" alt="Instagram"></a>
         </li>
-        <li>
+        <li class="uk-iconnav">
           <a href="/"><img class="s-item" title="Telegram" src="../static/images/telegram.png" alt="Telegram"></a>
         </li>
-        <li>
+        <li class="uk-iconnav">
           <a href="https://www.tiktok.com/@pro.shtor"><img class="s-item" title="TikTok" src="../static/images/tiktok.png" alt="TikTok"></a>
         </li>
       </ul>
     </div>
   </nav>
   <main>
-    <!--<div class="uk-section uk-section-default">
-      <div class="uk-container uk-flex uk-height-small uk-margin uk-text-center">
-        <button class="uk-margin-auto uk-margin-auto-vertical uk-button uk-button-danger" type="button" uk-toggle="target: #modal-example">
+    <div class="uk-section uk-section-default">
+      <div class="uk-container uk-flex uk-height-small uk-margin uk-text-center uk-animation-toggle">
+        <button class="uk-margin-auto uk-margin-auto-vertical uk-button uk-button-danger uk-animation-shake" type="button" uk-toggle="target: #modal-example">
           Замовити безкоштовний замір
         </button>
       </div>
-    </div>-->
-    <div class="uk-section uk-section-default">
+    </div>
+    <div class="uk-section uk-section-default" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
       <div class="uk-container">
         <div class="uk-text-center">
-          <p>Зараз наша команда займається переробкою сторінки.</p>
-          <p>Дуже скоро ми повернемось та зробимо цей світ краще</p>
-          <p>Слава Україні!</p>
+          <h4>Зараз наша команда займається переробкою сторінки.</h4>
+          <h4>Дуже скоро ми повернемось та зробимо цей світ краще</h4>
+          <h4>Слава Україні!</h4>
     </div>
       </div>
     </div>
@@ -97,6 +97,28 @@
       </div>
     </div>
   </main>
+  <footer class="uk-section uk-section-primary uk-preserve-color">
+      <div class="uk-container">
+          <div class="uk-grid-match uk-child-width-expand@m" uk-grid >
+              <div>
+                  <div class="contacts uk-card uk-card-default uk-card-body" style="color: white;background: #333333;border:0px;" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                      <h5 class="contacts">Контакти:</h5>
+                      <h5 class="contacts">Телефон:  +380 (50) 914 14 70</h5>
+                      <h5 class="contacts">email:  illya.petrusenko@gmail.com</h5>
+                  </div>
+              </div>
+              <div>
+                  <div>
+                        <div class="map" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                          <!-- Paste your Google Maps embed code here -->
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.2696162057155!2d30.508379194113132!3d50.47332421639096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf486a5c7041%3A0xdc56c361486d13a5!2sPRO.Shtor!5e0!3m2!1suk!2sua!4v1680758199019!5m2!1suk!2sua" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
 </body>
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/js/uikit.min.js"></script>
