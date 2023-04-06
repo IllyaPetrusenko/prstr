@@ -1,42 +1,38 @@
-// Получение элементов страницы
-const modal = document.querySelector('.modal');
-const modalButton = document.querySelectorAll('.modal-button');
-const close = document.querySelector('.close');
-const form = document.querySelector('.form');
-const phoneInput = document.querySelector('#phone');
+const form = document.querySelector('#callback-form');
+const endpoint = 'https://example.com/api/call';
 
-// Открытие модального окна по клику на кнопку
-modalButton.forEach((button) => {
-  button.addEventListener('click', () => {
-    modal.style.display = 'block';
-  });
-});
-
-// Закрытие модального окна по клику на крестик или вне модального окна
-close.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-
-window.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
-});
-
-// Проверка телефона при отправке формы
 form.addEventListener('submit', (event) => {
-  event.preventDefault(); // Отмена действия по умолчанию (отправка формы)
+  event.preventDefault();
 
-  const phone = phoneInput.value;
+  const phoneInput = document.querySelector('#phone-input');
+  const phoneRegex = /^\+380\d{9}$/;
+  const nameInput = document.querySelector('#name-input');
+  const phoneError = document.querySelector('#phone-error');
 
-  // Регулярное выражение для проверки телефона
-  const phoneRegex = /^\+?[1-9]\d{1,14}$/;
-
-  if (!phoneRegex.test(phone)) {
-    alert('Некорректный номер телефона!');
+  if (!phoneRegex.test(phoneInput.value)) {
+    phoneError.style.display = 'block';
     return;
   }
 
-  // Отправка формы
-  form.submit();
+  phoneError.style.display = 'none';
+
+  const data = {
+    name: nameInput.value,
+    phone: phoneInput.value
+  };
+
+  fetch(endpoint, {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error(error);
+  });
 });
