@@ -4,3 +4,4 @@ wsgi.py
 __pycache__/
 proshtorenv/
 .wsgi.py.swp
+test.py

@@ -35,8 +35,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/css/uikit.min.css" />
     <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
-<body>
-  <nav class="uk-navbar-container">
+  <body>
+    <nav class="uk-navbar-container">
     <a class="uk-navbar-item uk-logo" href="/">
       <img src="../static/images/111.png" alt="Logo" style="max-width: 60%;">
     </a>
@@ -57,10 +57,9 @@
       </ul>
     </div>
   </nav>
-  <main>
     <div class="uk-section uk-section-default">
       <div class="uk-container uk-flex uk-height-small uk-margin uk-text-center uk-animation-toggle">
-        <button class="uk-margin-auto uk-margin-auto-vertical uk-button uk-button-danger uk-animation-shake" type="button" uk-toggle="target: #modal-example">
+        <button class="uk-margin-auto uk-margin-auto-vertical uk-button uk-button-danger uk-animation-shake" type="button" uk-toggle="target: #callback-form">
           Замовити безкоштовний замір
         </button>
       </div>
@@ -75,28 +74,24 @@
       </div>
     </div>
     <!-- This is the modal -->
-    <div id="#callback-form" uk-modal>
+    <div uk-modal id="callback-form">
       <div class="uk-modal-dialog uk-modal-body">
-        <form>
+        <form id="my-form">
           <fieldset class="uk-fieldset">
             <legend class="uk-legend uk-text-center">Замовлення безкоштовного заміру</legend>
             <div class="uk-margin">
-                <input class="uk-input" type="text" placeholder="Імʼя" aria-label="Input">
+                <input class="uk-input" id="name-input" type="text" placeholder="Імʼя" aria-label="Input">
             </div>
             <div class="uk-margin">
-                <input class="uk-input" type="text" placeholder="Номер телефону" aria-label="Input">
+                <input class="uk-input" id="phone-input" type="text" placeholder="Номер телефону" aria-label="Input">
             </div>
             <div class="uk-margin">
-                <textarea class="uk-textarea" rows="5" placeholder="Можливо у Вас є питання до нас? Ви можете написати його" aria-label="Textarea"></textarea>
+                <textarea class="uk-textarea" id="text-input" rows="5" placeholder="Можливо у Вас є питання до нас? Ви можете написати його" aria-label="Textarea"></textarea>
             </div>
         </fieldset>
+        <button class="uk-button uk-button-accept uk-text-center" type="submit">Відправити</button>
         </form>
-        <p class="uk-text-right">
-          <button class="uk-button uk-button-accept uk-text-center" type="button">Відправити</button>
-        </p>
-      </div>
     </div>
-  </main>
   <footer class="uk-section uk-section-primary uk-preserve-color">
       <div class="uk-container">
           <div class="uk-grid-match uk-child-width-expand@m" uk-grid >
@@ -118,9 +113,9 @@
           </div>
       </div>
   </footer>
-
-</body>
-<!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/js/uikit-icons.min.js"></script>
+  </body>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/js/uikit-icons.min.js"></script>
+  <script src="../static/js/script.js"></script>
 </html>

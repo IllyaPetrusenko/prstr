@@ -1,38 +1,39 @@
-const form = document.querySelector('#callback-form');
-const endpoint = 'https://example.com/api/call';
+// Get the form element and add an event listener for form submission
+const form = document.querySelector('#my-form');
+form.addEventListener('submit', function(e) {
+  e.preventDefault(); // prevent the default form submission
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-
+  // Get the form data and convert it to a JSON string
   const phoneInput = document.querySelector('#phone-input');
-  const phoneRegex = /^\+380\d{9}$/;
+  const phoneNumber = phoneInput.value;
   const nameInput = document.querySelector('#name-input');
-  const phoneError = document.querySelector('#phone-error');
+  const nameContact = nameInput.value;
+  const textInput = document.querySelector('#text-input');
+  const text = textInput.value;
+  const formData = new FormData(form);
+  const data = {"name": nameContact, "phone": phoneNumber, "comment": text};
+  const json = JSON.stringify(data);
+  console.log(json);
 
-  if (!phoneRegex.test(phoneInput.value)) {
-    phoneError.style.display = 'block';
-    return;
-  }
-
-  phoneError.style.display = 'none';
-
-  const data = {
-    name: nameInput.value,
-    phone: phoneInput.value
-  };
-
-  fetch(endpoint, {
+  // Send the data to the endpoint using Fetch API
+  fetch('/callback', {
     method: 'POST',
-    body: JSON.stringify(data),
     headers: {
       'Content-Type': 'application/json'
-    }
+    },
+    body: json
   })
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
   .then(data => {
     console.log(data);
+    // Do something with the response data
   })
   .catch(error => {
-    console.error(error);
+    console.error('Error:', error);
   });
 });
