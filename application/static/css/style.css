@@ -131,16 +131,11 @@ footer {
    font-size: 14px;
 }
 
-@media (max-width: 491px) {
-  .contacts .h5 {
-    font-size: 6px;
-  }
-}
-
 iframe {
   width: 100%;
 }
 
 .contacts {
   width: 100%;
+  font-size: 10px;
 }
