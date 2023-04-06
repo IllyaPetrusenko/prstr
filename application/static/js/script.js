@@ -30,7 +30,8 @@ form.addEventListener('submit', function(e) {
     return response.json();
   })
   .then(data => {
-    console.log(data);
+    modal.style.display = 'none';
+    alert('Дякуємо за звернення, скоро ми Вам передзвонимо!');
     // Do something with the response data
   })
   .catch(error => {
