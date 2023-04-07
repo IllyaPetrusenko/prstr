@@ -41,6 +41,7 @@ form.addEventListener('submit', function(e) {
   })
   .then(data => {
     alert('Дякуємо за звернення, скоро ми Вам передзвонимо!');
+    window.location.href = '/';
   })
   .catch(error => {
     console.error('Error:', error);
