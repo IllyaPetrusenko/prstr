@@ -28,9 +28,9 @@ ul {
 body {
     background-color: #333333;
     color: #fff;
-    max-width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: 25px;
 }
 
@@ -79,7 +79,7 @@ main {
 
 @media (max-width: 491px) {
   .uk-button {
-    font-size: 8px;
+    font-size: 13px;
   }
 }
 
@@ -123,5 +123,12 @@ iframe {
 
 .contacts {
   width: 100%;
-  font-size: 13px;
+  font-size: 18px;
+}
+
+.uk-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
