@@ -15,6 +15,19 @@ form.addEventListener('submit', function(e) {
   const json = JSON.stringify(data);
   const modal = document.querySelector('#callback-form');
 
+  // Проверка обязательных полей
+  if (!nameContact || !phoneNumber) {
+    alert('Необхідно заповнити обовʼязкові поля "Імʼя" та "Телефон"');
+    return;
+  }
+
+  // Валидация номера телефона
+  const phoneRegex = /^(\+38|38|8)?\d{3}\d{3}\d{2}\d{2}$/;
+  if (!phoneRegex.test(phoneNumber)) {
+    alert('Введіть коректний номер телефону');
+    return;
+  }
+
   // Send the data to the endpoint using Fetch API
   fetch('/callback', {
     method: 'POST',
