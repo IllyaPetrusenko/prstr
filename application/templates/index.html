@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H13YNG7KEM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-H13YNG7KEM');
+    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
@@ -33,53 +42,133 @@
     <!-- CSS  -->
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/css/uikit.min.css" />
-    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{ url_for('static', filename='css/index.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
   <body>
-    <nav class="uk-navbar-container" style="font-color: white;">
-      <div class="uk-container">
-        <div uk-navbar="align: center">
-
-            <div class="uk-navbar-center">
-
-                <ul class="uk-navbar-nav">
-                    <li>
-                        <a href="#">Parent</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+    <header>
+      <div class="logo">
+        <a href="/">
+          <img class="uk-align-center" src="../static/images/111.png" width="200" height="114" alt="Logo">
+        </a>
+      </div>
+      <nav class="uk-navbar-container" style="background: url('../static/images/header_banner.png'); color: #fff;">
+        <div class="uk-container">
+            <div uk-navbar>
+                <div class="uk-navbar-center">
+                    <div class="uk-navbar-center">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-icon"><a href="" class="uk-icon-link" uk-icon="instagram"></a></li>
+                            <li class="uk-icon"><a href="" class="uk-icon-link" uk-icon="facebook"></a></li>
+                            <li class="uk-icon"><a href="" class="uk-icon-link" uk-icon="tiktok"></a></li>
+                            <li>
+                                <a href="#">Продукція</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="#">Штори</a></li>
+                                        <li><a href="#">Жалюзі</a></li>
+                                        <li><a href="#">Ролети</a></li>
+                                        <li><a href="#">Москітні сітки</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Про нас</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="#">Як ми працюємо</a></li>
+                                        <li><a href="#">Контакти</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
             </div>
+        </div>
+    </nav>
+    </header>
+    <slider>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true;min-height: 400; max-height: 900;autoplay-interval: 4000;pause-on-hover: false">
+
+            <ul class="uk-slideshow-items">
+                <li>
+                    <div class="uk-position-cover">
+                        <img src="../static/images/1-3.jpg" alt="" uk-cover>
+                        <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                            <h2 class="uk-margin-remove">Жалюзі</h2>
+                            <div class="uk-container uk-flex uk-height-small uk-margin uk-text-center uk-animation-toggle">
+                                <button class="uk-margin-auto uk-margin-auto-vertical uk-button uk-button-danger uk-animation-shake" type="button" uk-toggle="target: #callback-form">
+                                  Замовити безкоштовний замір
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-position-cover">
+                        <img src="../static/images/63.jpg" alt="" uk-cover>
+                        <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                            <h2 class="uk-margin-remove">Штори</h2>
+                            <div class="uk-container uk-flex uk-height-small uk-margin uk-text-center uk-animation-toggle">
+                                <button class="uk-margin-auto uk-margin-auto-vertical uk-button uk-button-danger uk-animation-shake" type="button" uk-toggle="target: #callback-form">
+                                  Замовити безкоштовний замір
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-position-cover">
+                        <img src="../static/images/53.jpg" alt="" uk-cover>
+                        <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                            <h2 class="uk-margin-remove">Ролети</h2>
+                            <div class="uk-container uk-flex uk-height-small uk-margin uk-text-center uk-animation-toggle">
+                                <button class="uk-margin-auto uk-margin-auto-vertical uk-button uk-button-danger uk-animation-shake" type="button" uk-toggle="target: #callback-form">
+                                  Замовити безкоштовний замір
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a class="uk-slidenav-large uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-slidenav-large uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 
         </div>
-      </div>
-      <a class="uk-navbar-item uk-logo">
-        <img src="../static/images/111.png" alt="Logo" style="max-width: 30%;">
-      </a>
-      <div class="uk-navbar-item uk-logo" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-iconnav; delay: 300; repeat: true">
-        <ul class="uk-iconnav">
-          <li class="uk-iconnav" style="max-width: 10%;">
-            <a href="https://www.facebook.com/profile.php?id=100091578886905"><img class="s-item" title="Facebook" src="../static/images/facebook.png" alt="Facebook"></a>
-          </li>
-          <li class="uk-iconnav" style="max-width: 10%;">
-            <a href="https://www.instagram.com/proshtor/"><img class="s-item" title="Instagram" src="../static/images/instagram.png" alt="Instagram"></a>
-          </li>
-          <li class="uk-iconnav" style="max-width: 10%;">
-            <a href="/"><img class="s-item" title="Telegram" src="../static/images/telegram.png" alt="Telegram"></a>
-          </li>
-          <li class="uk-iconnav" style="max-width: 10%;">
-            <a href="https://www.tiktok.com/@proshtor?_t=8bN43dcB9CH&_r=1"><img class="s-item" title="TikTok" src="../static/images/tiktok.png" alt="TikTok"></a>
-          </li>
-        </ul>
-      </div>
-  </nav>
+    </slider>
+    <hr class="uk-divider-icon">
   </body>
+  <!-- This is the modal -->
+  <div uk-modal id="callback-form">
+      <div class="uk-modal-dialog uk-modal-body">
+        <form id="my-form">
+          <fieldset class="uk-fieldset">
+            <legend class="uk-legend uk-text-center">Замовлення безкоштовного заміру</legend>
+            <div class="uk-margin">
+                <input class="uk-input" id="name-input" type="text" placeholder="Імʼя" aria-label="Input">
+            </div>
+            <div class="uk-margin">
+                <input class="uk-input" id="phone-input" type="text" placeholder="Номер телефону" aria-label="Input">
+            </div>
+            <div class="uk-margin">
+                <textarea class="uk-textarea" id="text-input" rows="5" placeholder="Можливо у Вас є питання до нас? Ви можете написати його" aria-label="Textarea"></textarea>
+            </div>
+          </fieldset>
+        <button class="uk-button uk-button-accept uk-text-center" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ6KJ50MPH">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KZ6KJ50MPH');
+  </script>
   <!-- UIkit JS -->
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/js/uikit-icons.min.js"></script>
