@@ -62,7 +62,7 @@
                                 <a href="#">Продукція</a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li><a href="#">Штори</a></li>
+                                        <li><a href="#curtains" uk-scroll="offset:80;">Штори</a></li>
                                         <li><a href="#">Жалюзі</a></li>
                                         <li><a href="#">Ролети</a></li>
                                         <li><a href="#">Москітні сітки</a></li>
@@ -135,16 +135,20 @@
 
         </div>
     </slider>
+
     <hr class="uk-divider-icon">
+    <h3 class="uk-text-center" style="color: #fff;margin-top: 20px;">Наша продукція</h3>
+    <hr class="uk-divider-icon">
+
     <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
         <div class="uk-card-media-left uk-cover-container">
             <img src="../static/images/1_3.png" alt="" uk-cover>
             <canvas width="600" height="400"></canvas>
         </div>
-        <div style="background: url('../static/images/header_banner.png'); color: #fff;">
+        <div style="background: #353535; color: #fff;">
             <div class="uk-card-body">
-                <h3 class="uk-card-title">Media Left</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <h3 class="uk-card-title" id="curtains">Штори</h3>
+                <p>Ми маємо дуже великий вибір якісних, преміальних матеріалів.</p>
             </div>
         </div>
     </div>
@@ -154,7 +158,7 @@
             <img src="../static/images/2_1.png" alt="" uk-cover>
             <canvas width="600" height="400"></canvas>
         </div>
-        <div style="background: url('../static/images/header_banner.png'); color: #fff;">
+        <div style="background: #353535; color: #fff;">
             <div class="uk-card-body">
                 <h3 class="uk-card-title">Media Right</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
@@ -167,7 +171,7 @@
             <img src="../static/images/1_3.png" alt="" uk-cover>
             <canvas width="600" height="400"></canvas>
         </div>
-        <div style="background: url('../static/images/header_banner.png'); color: #fff;">
+        <div style="background: #353535; color: #fff;"">
             <div class="uk-card-body">
                 <h3 class="uk-card-title">Media Left</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
@@ -188,13 +192,34 @@
             <img src="../static/images/2_1.png" alt="" uk-cover>
             <canvas width="600" height="400"></canvas>
         </div>
-        <div style="background: url('../static/images/header_banner.png'); color: #fff;">
+        <div style="background: #353535; color: #fff;">
             <div class="uk-card-body">
                 <h3 class="uk-card-title">Media Right</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
             </div>
         </div>
     </div>
+    <footer class="uk-section uk-section-primary uk-preserve-color">
+      <div class="uk-container">
+          <div class="uk-grid-match uk-child-width-expand@m" uk-grid >
+              <div>
+                  <div class="uk-card uk-card-default uk-card-body uk-padding" style="color: white;background: #333333;border:0px;">
+                      <h5 class="contacts">Контакти:</h5>
+                      <p class="contacts">Телефон:  +380 (50) 914 14 70</p>
+                      <p   class="contacts">email:  proshtor@gmail.com</p>
+                  </div>
+              </div>
+              <div>
+                  <div>
+                        <div class="map">
+                          <!-- Paste your Google Maps embed code here -->
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.2696162057155!2d30.508379194113132!3d50.47332421639096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf486a5c7041%3A0xdc56c361486d13a5!2sPRO.Shtor!5e0!3m2!1suk!2sua!4v1680758199019!5m2!1suk!2sua" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
   </body>
   <!-- This is the modal -->
   <div uk-modal id="callback-form">

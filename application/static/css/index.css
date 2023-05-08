@@ -54,3 +54,22 @@ body {
 .uk-card-default .uk-card-title {
   color: #fff;
 }
+
+footer {
+   margin-top: 10%;
+   margin-bottom: 10%;
+   font-size: 14px;
+}
+
+iframe {
+  width: 100%;
+}
+
+.contacts {
+  width: 100%;
+  font-size: 18px;
+}
+
+.uk-section-primary {
+  background: #353535;
+}
