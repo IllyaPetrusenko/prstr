@@ -2,6 +2,12 @@ html{
     background: #333333;
 }
 
+body {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .uk-navbar-nav > li > a {
   padding: 0 0;
   color: #fff;
@@ -39,6 +45,12 @@ html{
   box-shadow: 0 5px 12px rgba(0,0,0,.15);
 }
 
-slider {
-  width: 50%;
+.logo{
+  width: 30%;
+  margin-left:35%;
+  margin-right:35   %;
+}
+
+.uk-card-default .uk-card-title {
+  color: #fff;
 }
