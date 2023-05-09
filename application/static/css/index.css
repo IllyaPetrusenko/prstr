@@ -3,9 +3,9 @@ html{
 }
 
 body {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .uk-navbar-nav > li > a {
@@ -48,7 +48,7 @@ body {
 .logo{
   width: 30%;
   margin-left:35%;
-  margin-right:35   %;
+  margin-right:35%;
 }
 
 .uk-card-default .uk-card-title {
@@ -144,6 +144,20 @@ h1, a, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .uk-card-default {
-  background: url('../images/razdely_2.png');
+  background: url('../images/razdely_3.png');
   color: #fff;
+}
+
+@media screen and (min-width: 1450px) {
+    body {
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+}
+
+@media screen and (max-width: 491px) {
+  .uk-button {
+    font-size: 10px;
+  }
 }
