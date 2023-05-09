@@ -73,3 +73,72 @@ iframe {
 .uk-section-primary {
   background: #353535;
 }
+
+
+@media (max-width: 491px) {
+  .uk-button {
+    font-size: 13px;
+  }
+}
+
+.uk-button-accept {
+  background-color: #059b00;
+  color: #fff;
+  border: 1px solid transparent;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.uk-button-danger {
+  background-color: #cb0002;
+  color: #fff;
+}
+
+.uk-button-danger:hover {
+  background-color: #cb0002b8;
+  color: #fff;
+}
+
+.uk-modal-dialog {
+  background: #333333;
+}
+
+.uk-input {
+  background: #353535;
+  color: #fff;
+}
+
+.uk-input:focus {
+  background: #353535;
+  color: #fff;
+}
+
+.uk-textarea {
+  background: #353535;
+  color: #fff;
+}
+
+.uk-textarea:focus {
+  background: #353535;
+  color: #fff;
+}
+
+.uk-legend {
+  color: #fff;
+}
+
+@font-face {
+    font-family: 'Nautilus';
+    src: url('../fonts/Days Sans Black.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, a, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Nautilus";
+  font-style: normal;
+  font-weight: normal;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+}

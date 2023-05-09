@@ -87,6 +87,9 @@ main {
   background-color: #059b00;
   color: #fff;
   border: 1px solid transparent;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .uk-button-danger {
@@ -162,4 +165,32 @@ p {
 .uk-overlay-default {
   background: rgba(47, 42, 42, 0.8);
   width: 60%;
+}
+
+.uk-modal-dialog {
+  background: #333333;
+}
+
+.uk-input {
+  background: #353535;
+  color: #fff;
+}
+
+.uk-input:focus {
+  background: #353535;
+  color: #fff;
+}
+
+.uk-textarea {
+  background: #353535;
+  color: #fff;
+}
+
+.uk-textarea:focus {
+  background: #353535;
+  color: #fff;
+}
+
+.uk-legend {
+  color: #fff;
 }
