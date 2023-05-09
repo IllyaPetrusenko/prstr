@@ -156,8 +156,8 @@ h1, a, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     }
 }
 
-@media screen and (max-width: 491px) {
+@media screen and (max-width: 415px) {
   .uk-button {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
